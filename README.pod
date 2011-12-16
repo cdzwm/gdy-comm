@@ -4,4 +4,4 @@ common libraries from gdy server and client.
 
 =head1
 
-Authors: nodejs@live.cn
+Authors: canw(nodejs@live.cn), eggcaker(eggcaker@gmail.com)
