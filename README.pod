@@ -1,3 +1,7 @@
 =head1 Introduction
 
 common libraries from gdy server and client.
+
+=head1
+
+Authors: nodejs@live.cn
