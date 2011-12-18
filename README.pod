@@ -2,6 +2,6 @@
 
 common libraries from gdy server and client.
 
-=head1
+=head1 Authors
 
-Authors: canw(nodejs@live.cn), eggcaker(eggcaker@gmail.com)
+canw(nodejs@live.cn), eggcaker(eggcaker@gmail.com)
