@@ -30,7 +30,7 @@ module.exports.newMessage = function(cmd){
 	return {cmd: cmd};
 }
 
-module.exports.packMessage(msg){
+module.exports.packMessage = function(msg){
 		return msg_begin + JSON.stringify(cmd) + msg_end;
 }
 
