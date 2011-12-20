@@ -31,7 +31,7 @@ module.exports.newMessage = function(cmd){
 }
 
 module.exports.packMessage = function(msg){
-		return msg_begin + JSON.stringify(cmd) + msg_end;
+		return msg_begin + JSON.stringify(msg) + msg_end;
 }
 
 module.exports.msgBegin = function(){
