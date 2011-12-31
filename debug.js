@@ -1,3 +1,5 @@
+// debug function
+
 global.DEBUG = (process.env["GDY_DEBUG"] == 1);
 global.DBG_LOG = function(arg1, arg2){
 	if( DEBUG ){
