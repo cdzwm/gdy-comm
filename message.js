@@ -26,11 +26,11 @@ module.exports.parseMessage = function(msg_data, mq){
 	return last_pos;
 }
 
-module.exports.newMessage = function(cmd){
+module.exports.new = function(cmd){
 	return {cmd: cmd};
 }
 
-module.exports.packMessage = function(msg){
+module.exports.pack = function(msg){
 		return msg_begin + JSON.stringify(msg) + msg_end;
 }
 
