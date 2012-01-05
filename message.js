@@ -27,7 +27,8 @@ module.exports.parseMessage = function(msg_data, mq){
 }
 
 module.exports.new = function(cmd){
-	return {cmd: cmd};
+	var message = {cmd: cmd};
+	return message;
 }
 
 module.exports.pack = function(msg){
