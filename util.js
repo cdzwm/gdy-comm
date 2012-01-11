@@ -9,3 +9,12 @@ global.cloneObject = function(obj) {
 	}
 	return clone;
 }
+
+global.setP = function(){
+	var that1 = arguments[0];
+	var that2 = arguments[1];
+
+	for(var i=2;i<arguments.length;i++){
+		that1[arguments[i]] = that2[arguments[i]];
+	}
+}
