@@ -10,11 +10,16 @@ global.cloneObject = function(obj) {
 	return clone;
 }
 
-global.setP = function(){
-	var that1 = arguments[0];
-	var that2 = arguments[1];
+global.setProperty = function(obj1, pa1, obj2, pa2){
+	if( Array.isArray(pa1) || Array.isArray(pa2) )
+		return false;
+	if( typeof(obj1) != "object" || typeof(obj2) != "object" )
+		return false;
+	
+	if( pa1.length != pa2.length )
+		return false;
 
-	for(var i=2;i<arguments.length;i++){
-		that1[arguments[i]] = that2[arguments[i]];
+	for(var i in pa1 ){
+		obj1[pa1[i]] = obj2[pa2[i]];
 	}
 }
