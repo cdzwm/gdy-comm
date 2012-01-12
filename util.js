@@ -11,13 +11,20 @@ global.cloneObject = function(obj) {
 }
 
 global.setProperty = function(obj1, pa1, obj2, pa2){
-	if( Array.isArray(pa1) || Array.isArray(pa2) )
+	if( !Array.isArray(pa1) || !Array.isArray(pa2) ){
+		DBG_LOG("1");
 		return false;
-	if( typeof(obj1) != "object" || typeof(obj2) != "object" )
+	}
+
+	if( typeof(obj1) != "object" || typeof(obj2) != "object" ){
+		DBG_LOG("2");
 		return false;
+	}
 	
-	if( pa1.length != pa2.length )
+	if( pa1.length != pa2.length ){
+		DBG_LOG("3");
 		return false;
+	}
 
 	for(var i in pa1 ){
 		obj1[pa1[i]] = obj2[pa2[i]];
