@@ -50,7 +50,7 @@ exports.msgReEnd = function(){
 	return exports.msgEnd();
 }
 
-exports.newRespMessage = function(msg){
+exports.newResp = function(msg){
 	var m = exports.new(msg.cmd + "_resp");
 	return m;
 }
